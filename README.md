@@ -125,8 +125,3 @@ The panel `painel_regressao_q_bp.csv` is provided so that the regressions can be
 - No stage-by-stage sample attrition table is saved.
 - The raw CVM data may be revised by the source after download; the download date is recorded above.
 
-## 8. License and citation
-
-[Choose a license for the code, e.g. MIT, and add a `LICENSE` file.]
-
-[Add the citation and the DOI of this repository after the archive is created.]
