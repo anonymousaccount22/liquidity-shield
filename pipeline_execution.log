@@ -1,0 +1,69 @@
+PIPELINE EXECUTION LOG
+Data/hora de início : 2026-10-14T20:55:49
+Data/hora de término: 2026-10-14T21:03:59
+Resultado geral     : SUCESSO
+Tempo total         : 8m09.12s
+
+[ETAPAS]
+1. script_painel.py       status=OK             tempo=1m57.16s     returncode=0
+2. calcular_q.py          status=OK             tempo=36.52s       returncode=0
+3. script_painel.py#2     status=OK             tempo=1m42.49s     returncode=0
+4. calcular_q.py#2        status=OK             tempo=36.65s       returncode=0
+5. ortogonalizacao.py     status=OK             tempo=3.76s        returncode=0
+6. capex_bp.py            status=OK             tempo=31.81s       returncode=0
+7. projecoes_locais.py    status=OK             tempo=2m40.70s     returncode=0
+
+[AMBIENTE]
+python   : 3.13.16 (CPython)
+sistema  : Windows-11-10.0.26200-SP0
+numpy        : 2.5.4
+pandas       : 3.0.6
+requests     : 2.34.2
+statsmodels  : 0.15.0
+linearmodels : 7.0
+matplotlib   : 3.11.2
+
+[HASH SHA-256 DOS SCRIPTS]
+b09bd2fd64f121c7f089bde7a79b8553c8061f5457af046bcb49dc8a3ba28bb0  script_painel.py
+ba73663c01d8db5222067b0bcb1170eff37e9a1324663195cbd36df3f887bfa3  calcular_q.py
+ddee732da35bd3e816602c712914c0229092d6c19d8c7741a393ccf7edd1e70f  ortogonalizacao.py
+cfcd7980ca864750c1befe8c5af37cfe71661196986f7e47c8f8be8b5f2ded5f  capex_bp.py
+15f4e704c4719cfc278d320b538d673cb002daacfcea7dfef8968326c7a67530  projecoes_locais.py
+
+[HASH SHA-256 DOS CSVs NA RAIZ]
+1648f6753cc9a342cda9d88b7cc188bfdfe3422574a4a6ca5448be9b1aa7c90b  cad_cia_aberta.csv  (1493831 bytes)
+8b418facdde24c2a555a3ee44bf46f68a1653852c86e77ed4db9b531de3cdf65  capex_dfc.csv  (1009574 bytes)
+cde645f0324599138d46634ddda60714700ee0612ccb43a633f21a9911e166c5  capex_dfc_trimestral.csv  (2279695 bytes)
+040a56f915a2ec94b974ebdd7d094b00c62274577728026496890bc686f67aed  cfo_dfc_trimestral.csv  (2917217 bytes)
+cbf1b70bd198bf2c3d63250a8cb6a92a6e723b049cf4a061d236cb125af10fdc  cobertura_ativo_fixo_ano.csv  (3103 bytes)
+faadc888b9dd416c1e2fa655169c342adb67ae89a5514bd37f7ec8395dd1ed96  cobertura_capex_ano.csv  (1197 bytes)
+19d4defaebfdb6b8e7a414d55659308426806b8cec08b7fdf647db0945221cc3  comparacao_total_vs_restrita_Delta_log_Ativo_Fixo_ctrlL1.csv  (17232 bytes)
+a72555253514cdd4c7832c8b1c99628172a9a03a2907934e662889aca38df060  comparacao_total_vs_restrita_Delta_log_Ativo_Fixo_ctrlL1_sem2020_2021.csv  (17070 bytes)
+4f2cd22483824d30ae644b2eb32524363bd3370a4d99ee2f68d6c559d54523f2  datas_copom.csv  (2160 bytes)
+b6bf83eb87fb06ff3d69f4d64cbc2994b11c1ec4aaa618d6d40a32c87498a94a  diag_perm_Capex_DFC_Ativo_acum.csv  (910 bytes)
+a0437582d0b3aa1366edd3e45ea074ba0c581501b28ae358155c458cc4970551  diag_perm_Capex_DFC_Ativo_acum_ex2021Q4.csv  (177 bytes)
+5ee1732ecdafb6b480d1dbf57322f13c496e4e7d72c60ac5a0f7bf3fda67ef41  diagnostico_pipeline_Capex_DFC_Ativo_ctrlL1.csv  (512 bytes)
+36bec0a0966a6b2e51c1f65eedc482bf94719454eca19d87a8be7c1c13002a4c  diagnostico_pipeline_Delta_Capex.csv  (488 bytes)
+2d3f94126a2b02a78789646e1398b3db8d046189275c6bbc9d147dca22bd2538  diagnostico_selecao_Delta_log_Ativo_Fixo_ctrlL1.csv  (491 bytes)
+2d3f94126a2b02a78789646e1398b3db8d046189275c6bbc9d147dca22bd2538  diagnostico_selecao_Delta_log_Ativo_Fixo_ctrlL1_sem2020_2021.csv  (491 bytes)
+f55f4d5b707cea48c97efbcf6d60d60943c392748ca1bdde81226e5455560506  epu_brasil.csv  (5360 bytes)
+ce92843582a23832e5cd5accc5b0e09c1e485ca9f325b348e4a2607e1076d39a  estatisticas_tobin_q.csv  (569 bytes)
+0cf6596b6e6e8c01902f3ad5876802551ca66d4f8d48c967d543052559005ef9  irf_consolidado_Delta_log_Ativo_Fixo_ctrlL1.csv  (88081 bytes)
+f0e070f0f969b2847b39b460edeba8d055fe41fc505ad661832d92624e4c6a17  irf_consolidado_Delta_log_Ativo_Fixo_ctrlL1_sem2020_2021.csv  (87691 bytes)
+def7a0189a5cb94eaee5ecbfd4e54d450fa75a93ff2ef80dee4342aed7751162  painel_final.csv  (8868789 bytes)
+bb83a277ab0cdddc84d574ac2ee2ee9b2728935294d824cb686349ed4bc363cb  painel_final_q.csv  (9765442 bytes)
+c6448cb266783006cd380f4b04084595aa9299fc4dc98cc38f5affa5198d6eac  painel_regressao.csv  (7280528 bytes)
+b577f6cf32b09371d5a6db038b3a3947f87270596945c332f1e6f7a9666f2db3  painel_regressao_q.csv  (4622090 bytes)
+6a0817a5d199dbcd4553c1af778d8eb16012b0b8720832b812be7076f914cfd2  painel_regressao_q_bp.csv  (10425110 bytes)
+12828b846e16fe7e93ecfac3df10e481a581384940add04b2d29b847464e311f  painel_regressao_q_dfc.csv  (5422887 bytes)
+0b32e1d89daec8e5c5eafaa5c7b2fb723c2e194a44c50971bf7ed4150fe3ff73  painel_regressao_q_dfc_ortog.csv  (5367029 bytes)
+e00d84f2edfa6d461963a3a6d801b90db1b9fd5565291fdd6e7974a74ebae1ae  painel_regressao_q_ortog.csv  (10060703 bytes)
+b15c34f233735170147560311f743eab71329b70eafc5644cbe5b7e60e397e17  pre_tendencias_Delta_log_Ativo_Fixo_ctrlL1.csv  (12619 bytes)
+513d2f94cb66a4a0e4ffe166bba686d63639dbd10cd1c0b8d35f97c7c9bfce37  precos_trimestrais.csv  (491741 bytes)
+eeae7b5b8bdca5d7483fffa7c32af63eb6b03383e7a677b054a4d8b84c65be22  risco_fiscal_trimestral.csv  (2982 bytes)
+721a0cec22abc865c3084c17bc3cc5a7b85237e91018723778dd8ef7fc0f57f3  splits_ajustados.csv  (84599 bytes)
+de34e74ac391f6d14eb64a286e87ced2333882591cb4418c9c81c3c6ac6d5792  suspeitos_splits.csv  (50184 bytes)
+970bff9d5e5a43a36a145750abc3a68dd3948acd62bc1d5d4efaf65aff812452  swap_di_pre_360_diario.csv  (109054 bytes)
+6af91f3b29643938fad59dc3d8a665ad57414f97f4d63d1409f102687b9acfae  tickers.csv  (19696 bytes)
+f80297139ad1b8165a1151cce9d6bb7a739160cab94a428a5527e4da0d9f31b8  vif_ctrl_int_Delta_log_Ativo_Fixo_ctrlL1.csv  (1296 bytes)
+aa9ddac862c4f68e59615eda3421f0865c9d6928cddfa82991cb5519559ff496  vix_trimestral.csv  (2892 bytes)

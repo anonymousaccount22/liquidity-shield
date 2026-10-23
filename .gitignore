@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+dados_b3/
+dados_cvm/
+dados_fca/
+dados_fre/
+v1/
+*.pkl
+*.zip
+*.png
+diagnostico_*.csv
+diag_perm_*.csv
+comparacao_*.csv
+cobertura_*.csv
+monte_carlo_resultados*.csv
+vif_*.csv
+swap_di_pre_360_falhas*
